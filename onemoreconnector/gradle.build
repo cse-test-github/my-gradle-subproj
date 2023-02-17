@@ -1,1 +1,11 @@
-test
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+  implementation project(':')
+  implementation "org.apache.hadoop:hadoop-core:${hadoopVersion}"
+}
+
